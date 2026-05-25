@@ -1,0 +1,178 @@
+.corporate-page {
+  padding-top: 80px;
+}
+
+.corp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero */
+.corp-hero {
+  padding: 100px 24px 80px;
+  text-align: center;
+  background: radial-gradient(circle at 50% 50%, rgba(var(--accent-blue-rgb), 0.04), transparent 70%);
+}
+
+.corp-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent-wood);
+  background: rgba(var(--accent-rgb), 0.04);
+  border: 1px solid var(--border-color);
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.corp-title {
+  font-size: 3.5rem;
+  color: var(--text-primary);
+  margin-top: 16px;
+}
+
+.corp-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* Philosophy */
+.philosophy-detail {
+  padding: 60px 0 80px;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.philosophy-text h2 {
+  font-size: 2.2rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.philosophy-text p {
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.philosophy-image-box {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.04), rgba(var(--accent-blue-rgb), 0.02));
+}
+
+.corp-image-placeholder {
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+.image-overlay-text {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Pillars */
+.corp-pillars {
+  padding: 80px 0;
+  background: rgba(var(--accent-rgb), 0.01);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.pillar-card {
+  padding: 40px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s;
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(var(--accent-rgb), 0.15);
+  box-shadow: 0 10px 30px -10px rgba(var(--accent-rgb), 0.1);
+}
+
+.pillar-icon {
+  font-size: 2.5rem;
+}
+
+.pillar-card h3 {
+  font-size: 1.3rem;
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+}
+
+.pillar-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Vision Mission */
+.vision-mission-section {
+  padding: 80px 0 100px;
+}
+
+.vision-mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.vm-card {
+  padding: 40px;
+}
+
+.vm-card h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  font-family: var(--font-serif);
+}
+
+.vm-card p {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .vision-mission-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .corp-title {
+    font-size: 2.5rem;
+  }
+}
